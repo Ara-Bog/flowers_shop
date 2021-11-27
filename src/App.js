@@ -1,7 +1,7 @@
 import propTypes from 'prop-types'
 import React from 'react'
 import axios from 'axios'
-import Flower from './Flower';
+import Flower from './FlowerCatalog';
 
 class App extends React.Component {
 
@@ -31,29 +31,10 @@ class App extends React.Component {
 			key={flower.productId}
 			id={flower.productId} name={flower.name} 
 			category={flower.category} price={flower.price} 
-			instructions={flower.instructions} />
+			instructions={flower.instruction} />
 			)
 		})}</div>
 	}
 };
-
-// Food.propTypes = {
-// 	name: propTypes.string.isRequired
-// }
-
-// function Food({name}) {
-// 	console.log(name)
-// 	return (
-// 		<h1>{name}i</h1>);
-// }
-
-// function App() {
-// 	return (
-// 		<div>
-// 			<h1>zz</h1>
-// 			<Food name='hu' />
-// 		</div>
-// 	);
-// }
 
 export default App;
