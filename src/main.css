@@ -22,6 +22,7 @@ section {
 button {
     background-color: unset;
     border: none;
+    cursor: pointer;
 }
 
 .ReactModal__Body--open {
@@ -501,7 +502,6 @@ h4 {
     margin: auto;
     z-index: 20;
     flex-direction: column;
-    width: 100%;
     padding: 10px 10px;
 }
 
