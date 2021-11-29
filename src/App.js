@@ -1,40 +1,47 @@
-import propTypes from 'prop-types'
 import React from 'react'
-import axios from 'axios'
-import Flower from './FlowerCatalog';
+import {HashRouter, Route, Routes} from 'react-router-dom'
+import Flower from './routes/Flower';
+import Home from './routes/Home';
+import NotFound from './routes/NotFound';
+import Nav from './components/Nav';
+import Catalog from './routes/Catalog';
+import Modal from './components/Modal';
+import Footer from './components/Footer';
+import Base from './db.json';
+import {setFlowers} from './redux/actions/flowers'
+import { useSelector, useDispatch } from 'react-redux';
+import { addFlowerBasket } from './redux/actions/basket'
 
-class App extends React.Component {
+function Sections() {
+	const dispatch = useDispatch();
+	const storage = useSelector(({flowers}) => flowers.items);
 
-	state = {
-		loading: true,
-		flowers: []
-	};
-
-	getFlowers = async () => {
+	React.useEffect(() => {
 		const {
-			data: {
-				flowerlist : flowers
-			}
-		} = await axios.get("https://gist.githubusercontent.com/sandeepcmsm/2e1f5762fa5ca351d8f129e73c730071/raw/30fb98f124445596a2a96f60a233ab13d07167d0/flowers.json");
-		this.setState({flowers, loading: false})
-	}	
+			flowerlist : flowers
+		} =  Base;
+		dispatch(setFlowers(flowers));
+	});
 
-	componentDidMount() {
-		this.getFlowers()
+	const addFlowerToBasket = obj => {
+		dispatch(addFlowerBasket(obj));
 	}
 
-	render() {
-		const {loading, flowers} = this.state
-		return <div>{loading ? 'load...' : flowers.map(flower => {
-			return (
-			<Flower 
-			key={flower.productId}
-			id={flower.productId} name={flower.name} 
-			category={flower.category} price={flower.price} 
-			instructions={flower.instruction} />
-			)
-		})}</div>
-	}
-};
+	return(
+		<HashRouter>
+			<Nav/>
+			<Routes>
+				<Route path="/" element={<Home favorite={storage.slice(0, 4)} onAddFlower={addFlowerToBasket}/>}/>
+				<Route path="/catalog" element={<Catalog data={storage}  onAddFlower={addFlowerToBasket}/>}/>
+				<Route path="/product" element={<Flower />}> 
+					<Route path=":flowerId" element={<Flower />}/>
+				</Route>
+				<Route path="/basket" element={<Modal />}/>
+				<Route element={<NotFound/>}/>
+			</Routes>
+			<Footer/>
+		</HashRouter>
+	)
+}
 
-export default App;
+export default Sections;
