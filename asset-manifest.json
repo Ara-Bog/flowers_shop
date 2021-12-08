@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/flowers_shop/static/css/main.99c8929c.chunk.css",
-    "main.js": "/flowers_shop/static/js/main.349d7f99.chunk.js",
-    "main.js.map": "/flowers_shop/static/js/main.349d7f99.chunk.js.map",
+    "main.js": "/flowers_shop/static/js/main.881ea699.chunk.js",
+    "main.js.map": "/flowers_shop/static/js/main.881ea699.chunk.js.map",
     "runtime-main.js": "/flowers_shop/static/js/runtime-main.8dee942e.js",
     "runtime-main.js.map": "/flowers_shop/static/js/runtime-main.8dee942e.js.map",
     "static/js/2.eff976a4.chunk.js": "/flowers_shop/static/js/2.eff976a4.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.8dee942e.js",
     "static/js/2.eff976a4.chunk.js",
     "static/css/main.99c8929c.chunk.css",
-    "static/js/main.349d7f99.chunk.js"
+    "static/js/main.881ea699.chunk.js"
   ]
 }
