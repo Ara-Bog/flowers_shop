@@ -33,9 +33,9 @@ function Sections() {
 			<Routes>
 				<Route path="/" element={<Home favorite={storage.slice(0, 4)} onAddFlower={addFlowerToBasket}/>}/>
 				<Route path="/catalog" element={<Catalog data={storage}  onAddFlower={addFlowerToBasket}/>}/>
-				<Route path="/product" element={<Flower />}> 
-					<Route path=":flowerId" element={<Flower />}/>
-				</Route>
+				{/* <Route path="/product" element={<Flower />}> 
+					<Route path=":flowerId" element={<Flower onAddFlower={addFlowerToBasket}/>}/>
+				</Route> */}
 				<Route path="/basket" element={<Modal />}/>
 				<Route element={<NotFound/>}/>
 			</Routes>

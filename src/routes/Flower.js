@@ -1,12 +1,16 @@
 import React from "react";
 import { useLocation, useParams } from "react-router-dom";
 
-function Flower() {
+function Flower(props, addFlowerToBasket) {
 	let params = useParams();
     let location = useLocation();
-    console.log(params)
-    console.log(location)
-	return <h2>Invoice: {params.flowerId}zz</h2>;
+	return (
+        <section className="flowerPage">
+            <div className="flowerPage__block">
+                <div>{props.match.params.flowerId}</div>
+            </div>
+        </section>
+    );
 }
 
 export default Flower;

@@ -74,7 +74,7 @@ function Home({favorite, onAddFlower}) {
 					</div>
 				</div>
 				<div id="map">
-					<img src={process.env.PUBLIC_URL + "/img/map.jpg"} alt=""/>
+				<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa4bc297080f547c35919cbd16ad90ffb1df307da93983af26a4e949a8dc722eb&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
 				</div>
 			</div>
 		</div>
