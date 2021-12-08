@@ -19,6 +19,9 @@ function FlowerShow({productId, name, price, onAddFlower}) {
         {/* <Link to={"/product/" + productId} className="items__img">
             <img src={imgUrl} alt="" />
         </Link> */}
+        <div className="items__img">
+            <img src={imgUrl} alt="" />
+        </div>
         <div className="items__data">
             <p>{name}</p>
             <div className="price">
