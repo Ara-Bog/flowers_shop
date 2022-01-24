@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/flowers_shop/static/css/main.bb2df9f4.chunk.css",
-    "main.js": "/flowers_shop/static/js/main.b6cd07b1.chunk.js",
-    "main.js.map": "/flowers_shop/static/js/main.b6cd07b1.chunk.js.map",
+    "main.css": "/flowers_shop/static/css/main.b91bfb06.chunk.css",
+    "main.js": "/flowers_shop/static/js/main.80136da7.chunk.js",
+    "main.js.map": "/flowers_shop/static/js/main.80136da7.chunk.js.map",
     "runtime-main.js": "/flowers_shop/static/js/runtime-main.8dee942e.js",
     "runtime-main.js.map": "/flowers_shop/static/js/runtime-main.8dee942e.js.map",
-    "static/js/2.eff976a4.chunk.js": "/flowers_shop/static/js/2.eff976a4.chunk.js",
-    "static/js/2.eff976a4.chunk.js.map": "/flowers_shop/static/js/2.eff976a4.chunk.js.map",
+    "static/js/2.ecf11733.chunk.js": "/flowers_shop/static/js/2.ecf11733.chunk.js",
+    "static/js/2.ecf11733.chunk.js.map": "/flowers_shop/static/js/2.ecf11733.chunk.js.map",
     "index.html": "/flowers_shop/index.html",
-    "static/css/main.bb2df9f4.chunk.css.map": "/flowers_shop/static/css/main.bb2df9f4.chunk.css.map",
-    "static/js/2.eff976a4.chunk.js.LICENSE.txt": "/flowers_shop/static/js/2.eff976a4.chunk.js.LICENSE.txt",
+    "static/css/main.b91bfb06.chunk.css.map": "/flowers_shop/static/css/main.b91bfb06.chunk.css.map",
+    "static/js/2.ecf11733.chunk.js.LICENSE.txt": "/flowers_shop/static/js/2.ecf11733.chunk.js.LICENSE.txt",
     "static/media/fonts.css": "/flowers_shop/static/media/GraphikLCG-Regular.b4fc93d5.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.8dee942e.js",
-    "static/js/2.eff976a4.chunk.js",
-    "static/css/main.bb2df9f4.chunk.css",
-    "static/js/main.b6cd07b1.chunk.js"
+    "static/js/2.ecf11733.chunk.js",
+    "static/css/main.b91bfb06.chunk.css",
+    "static/js/main.80136da7.chunk.js"
   ]
 }
